@@ -4,8 +4,13 @@
 }
 
 h1,
+h2,
 .logo {
     font-family: "BootsAndSpurs", "Segoe UI";
+}
+
+.product-list h2 {
+    font-family: "Roboto";
 }
 
 header, footer {
