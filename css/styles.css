@@ -6,7 +6,7 @@ header a {
     color: #FFF;
 }
 
-.cta-button {
+.cta {
     background-color: #BB0000;
     color: #FFF;
 }
@@ -21,4 +21,8 @@ header a {
 
 .featured--products {
     background-color: #FbFbfb;
+}
+
+.cta-view {
+    
 }
