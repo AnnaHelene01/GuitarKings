@@ -4,7 +4,7 @@
 }
 
 h1 {
-    font-family; "Boots and Spurs";
+    font-family: "Boots and Spurs";
 }
 
 header, footer {
@@ -24,10 +24,6 @@ header a {
 
 .reviews {
     background-color: #E8E8E8;
-}
-
-.featured {
-
 }
 
 .featured--products {
