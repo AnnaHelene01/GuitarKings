@@ -1,5 +1,5 @@
 header {
-    background: #202020;
+    background-color: #202020;
 }
 
 header a {
@@ -7,6 +7,10 @@ header a {
 }
 
 .cta-button {
-    background: #BB0000;
+    background-color: #BB0000;
     color: #FFF;
+}
+
+.reviews {
+    background-color: #E8E8E8;
 }
