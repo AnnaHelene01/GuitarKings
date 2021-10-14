@@ -43,3 +43,8 @@ header a {
 .footer {
     text-align: center;
 }
+
+.review-bio, 
+.review-bio2 {
+    border-radius: 50%;
+}
