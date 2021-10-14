@@ -54,3 +54,7 @@ header a {
     border-radius: 5%;
     width: 40%;
 }
+
+.frontpage {
+    background-image: url('../images/home-header.jpg')
+}
