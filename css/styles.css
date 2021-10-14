@@ -47,4 +47,5 @@ header a {
 .review-bio, 
 .review-bio2 {
     border-radius: 50%;
+    width: 30%;
 }
