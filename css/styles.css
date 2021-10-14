@@ -1,6 +1,6 @@
 @font-face {
     font-family: "BootsAndSpurs";
-    src: url(../fonts/BootsAndSpurs.ttf) format(truetype);
+    src: url("../fonts/BootsAndSpurs.ttf") format("truetype");
 }
 
 body {
@@ -44,17 +44,20 @@ header a {
     text-align: center;
 }
 
+/* Runde av bildene under review seksjonen */
 .review-bio, 
 .review-bio2 {
     border-radius: 50%;
     width: 20%;
 }
 
+
 .hand-strumming-guitar {
     border-radius: 5%;
     width: 40%;
 }
 
+/* Bildet på forsiden til Guitar Kings (bakgrunnsbilde */
 .frontpage {
     background-image: url('../images/home-header.jpg')
 }
