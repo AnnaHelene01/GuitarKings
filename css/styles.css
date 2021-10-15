@@ -10,7 +10,7 @@ body {
 h1,
 h2,
 .logo {
-    font-family: "BootsAndSpurs", "Segoe UI";
+    font-family: "BootsAndSpurs", "Segoe UI", "sans serif";
 }
 
 header, footer {
