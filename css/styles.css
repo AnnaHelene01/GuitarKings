@@ -1,5 +1,5 @@
 @font-face {
-    font-family: BootsAndSpurs;
+    font-family: "BootsAndSpurs";
     src: url("../fonts/BootsAndSpurs.ttf") format("truetype");
 }
 
@@ -10,7 +10,7 @@ body {
 h1,
 h2,
 .logo {
-    font-family: "BootsAndSpurs", "Segoe UI", "sans serif";
+    font-family: "BootsAndSpurs", fantasy;
 }
 
 header, footer {
