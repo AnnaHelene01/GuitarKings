@@ -1,6 +1,6 @@
 @font-face {
     font-family: "BootsAndSpurs";
-    src: url("../fonts/BootsAndSpurs.ttf") format("truetype");
+    src: url("./fonts/BootsAndSpurs.ttf");
 }
 
 body {
@@ -11,6 +11,7 @@ h1,
 h2,
 .logo {
     font-family: "BootsAndSpurs", fantasy;
+    background-color: pink;
 }
 
 header, footer {
@@ -60,4 +61,5 @@ header a {
 /* Bildet på forsiden til Guitar Kings (bakgrunnsbilde */
 .frontpage {
     background-image: url('../images/home-header.jpg')
+    min-height: 400px;
 }
