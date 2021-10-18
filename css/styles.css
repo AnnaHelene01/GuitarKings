@@ -61,4 +61,7 @@ header a {
 /* Bildet på forsiden til Guitar Kings (bakgrunnsbilde */
 .frontpage {
     background-image: url('../images/home-header.jpg')  
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
 }
