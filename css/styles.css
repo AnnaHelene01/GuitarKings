@@ -30,19 +30,30 @@ nav li {
 
 header a {
     color: #FFF;
+    padding: 10px;   /*Mellomrom meny: Padding istedenfor margin fordi nå blir mer området "klikkbart" (mer brukervennlig) */
 }
 
+/* Send now knapp på contact side*/
 .cta {
     background-color: #BB0000;
     color: #FFF;
-    font-size: 1.5em;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px 80px;
+    border-radius: 5px;
+
+}
+
+.cta-small {
+    padding: 8px 30px;
+    font-size: 0,8em;
 }
 
 .reviews {
     background-color: #E8E8E8;
 }
 
-.featured--products {
+.featured__products {
     background-color: #FbFbfb;
 }
 
