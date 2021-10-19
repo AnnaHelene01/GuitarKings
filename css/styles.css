@@ -1,6 +1,6 @@
 @font-face {
     font-family: "BootsAndSpurs";
-    src: url("./fonts/BootsAndSpurs.ttf");
+    src: url("../fonts/BootsAndSpurs.ttf");
 }
 
 body {
@@ -16,6 +16,16 @@ h2,
 header, footer {
     background-color: #202020;
     color: #FFF;
+}
+
+/* Meny */
+nav li {
+    display: inline-block;
+}
+
+/* Sette underline på aktiv side*/
+.action {
+    text-decoration: underline;
 }
 
 header a {
@@ -44,6 +54,11 @@ header a {
     text-align: center;
 }
 
+/* Links */
+a {
+    text-decoration: none;
+}
+
 /* Runde av bildene under review seksjonen */
 .review-bio, 
 .review-bio2 {
@@ -62,6 +77,8 @@ header a {
     background-image: url('../images/home-header.jpg');  
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
     min-height: 70vh;
 }
 
