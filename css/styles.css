@@ -11,7 +11,6 @@ h1,
 h2,
 .logo {
     font-family: "BootsAndSpurs", fantasy;
-    background-color: pink;
 }
 
 header, footer {
@@ -54,14 +53,23 @@ header a {
 
 
 .hand-strumming-guitar {
-    border-radius: 5%;
+    border-radius: 100px;
     width: 40%;
 }
 
 /* Bildet på forsiden til Guitar Kings (bakgrunnsbilde */
 .frontpage {
-    background-image: url('../images/home-header.jpg')  
+    background-image: url('../images/home-header.jpg');  
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 70vh;
+}
+
+
+/* Kontakt siden */
+input,
+select,
+textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
 }
