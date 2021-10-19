@@ -1,24 +1,32 @@
+/*Sette egen font: */
 @font-face {
     font-family: "BootsAndSpurs";
     src: url("../fonts/BootsAndSpurs.ttf");
 }
 
+/*Sette font for resten av teksten på siden, samt ekstra fonter*/
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Verdana, sans-serif;
 }
 
+/*Velge ut hvilke elementer som skal ha Boots fonten:*/
 h1,
 h2,
 .logo {
-    font-family: "BootsAndSpurs", fantasy;
+    font-family: "BootsAndSpurs", "Segoe UI", Tahoma, Verdana;
 }
 
+/*Sette bakgrunnsfarge for head og footer*/
 header, footer {
     background-color: #202020;
     color: #FFF;
 }
 
 /* Meny */
+nav ul {
+    padding: 0px;
+}
+
 nav li {
     display: inline-block;
 }
