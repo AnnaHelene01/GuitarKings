@@ -16,6 +16,10 @@ h2,
     font-family: "BootsAndSpurs", "Segoe UI", Tahoma, Verdana;
 }
 
+.logo {
+    font-size: 2rem;
+}
+
 /*Sette bakgrunnsfarge for head og footer*/
 header, footer {
     background-color: #202020;
@@ -25,6 +29,7 @@ header, footer {
 /* Meny */
 nav ul {
     padding: 0px;
+    margin-left: 320px;
 }
 
 nav li {
@@ -108,4 +113,10 @@ select,
 textarea {
     border: 1px solid #c4c4c4;
     border-radius: 5px;
+}
+
+textarea {
+    vertical-align: top;    /*Flytte den øverst */
+    height: 4em;
+    resize: vertical;
 }
