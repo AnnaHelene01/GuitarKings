@@ -27,9 +27,17 @@ header, footer {
 }
 
 /* Meny */
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-left: 25px;
+}
+
 nav ul {
     padding: 0px;
-    margin-left: 320px;
 }
 
 nav li {
@@ -84,14 +92,6 @@ a {
     text-decoration: none;
 }
 
-/* Runde av bildene under review seksjonen */
-.review-bio, 
-.review-bio2 {
-    border-radius: 50%;
-    width: 20%;
-}
-
-
 .hand-strumming-guitar {
     border-radius: 100px;
     width: 40%;
@@ -108,6 +108,7 @@ a {
     position: relative;
 }
 
+/* Posisjonere header og view knappen sammen med bakgrunnsbilde */
 .welcome__content {
     position: absolute;
     text-align: center;
@@ -115,6 +116,33 @@ a {
     left: 100px;
 }
 
+/* Posisjonere "our guitars" og bildet til to like store flex bokser */
+.selling-points, 
+.reviews__content {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.selling-points > *,
+.reviews__content > * {
+    flex: 1;
+}
+
+/* Runde av bildene under review seksjonen */
+.review-bio, 
+.review-bio2 {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.reviews {
+    text-align: center;
+}
+
+.review__content {
+   
+}
 
 /* Kontakt siden */
 input,
