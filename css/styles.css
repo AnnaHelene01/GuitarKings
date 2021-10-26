@@ -110,6 +110,7 @@ a {
 
 .welcome__content {
     position: absolute;
+    text-align: center;
     top: 100px;
     left: 100px;
 }
