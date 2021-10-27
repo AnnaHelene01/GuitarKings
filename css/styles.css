@@ -192,3 +192,7 @@ textarea {
 .product-image_thumbnails {
     display: flex;
 }
+
+.flex-container {
+    display: flex;
+}
