@@ -124,6 +124,10 @@ a {
     display: flex;
 }
 
+.selling-points {
+    margin: 50px auto;
+}
+
 .selling-points > *,
 .reviews__content > * {
     flex: 1;
@@ -134,14 +138,25 @@ a {
 .review-bio2 {
     border-radius: 50%;
     width: 80px;
+    float: right;
 }
 
 .reviews {
     text-align: center;
+    padding: 50px;
 }
 
-.review__content {
-   
+.reviews__content {
+   text-align: left;
+   margin: auto;
+}
+
+.reviews__content div{
+    margin: 50px;
+}
+
+.reviews__name {
+    display: block;
 }
 
 /* Kontakt siden */
@@ -156,4 +171,24 @@ textarea {
     vertical-align: top;    /*Flytte den øverst */
     height: 4em;
     resize: vertical;
+}
+
+
+/* Product Specific Page */
+.product-specific_flex {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.product-specific_flex > * {
+    flex: 1;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-image_thumbnails {
+    display: flex;
 }
