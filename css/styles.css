@@ -167,7 +167,6 @@ textarea {
     border-radius: 5px;
     margin: 10px 10px 10px 0px;
     padding: 10px;
-    height: 100%;
 }
 
 textarea {
@@ -176,13 +175,19 @@ textarea {
     resize: vertical;
 }
 
+textarea {
+    height: 60.4%;
+}
+
 .contact {
     max-width: 1000px;
-    margin: auto;
+    margin: 50px auto;
+    text-align: center;
 }
 
 .form-wrapper {
     display: flex;
+    text-align: left;
 }
 
 .form-wrapper > * {
