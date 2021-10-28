@@ -178,11 +178,15 @@ textarea {
 .product-specific_flex {
     display: flex;
     max-width: 1000px;
-    margin: auto;
+    margin: 50px auto;
 }
 
 .product-specific_flex > * {
     flex: 1;
+}
+
+.product-specific_details {
+    padding: 20px;
 }
 
 .product-image {
@@ -191,5 +195,9 @@ textarea {
 
 .product-image_thumbnails {
     display: flex;
-    background-color: pink;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 5px;
 }
+
+
