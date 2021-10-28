@@ -75,8 +75,14 @@ header a {
     background-color: #E8E8E8;
 }
 
-.featured__products {
+.products {
     background-color: #FbFbfb;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.products img {
+    grid-column: -1/1;
 }
 
 .cta-sale {
@@ -157,6 +163,22 @@ a {
 
 .reviews__name {
     display: block;
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+    margin: 50px auto;
+    grid-gap: 10px;
+}
+
+.featured h2 {
+    grid-column: -1/1;
+}
+
+.featured img {
+    width: 100%;
 }
 
 /* KONTAKT siden */
