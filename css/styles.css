@@ -159,12 +159,15 @@ a {
     display: block;
 }
 
-/* Kontakt siden */
+/* KONTAKT siden */
 input,
 select,
 textarea {
     border: 1px solid #c4c4c4;
     border-radius: 5px;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    height: 100%;
 }
 
 textarea {
@@ -173,6 +176,20 @@ textarea {
     resize: vertical;
 }
 
+.contact {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.form-wrapper {
+    display: flex;
+}
+
+.form-wrapper > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
 /* Product Specific Page /Sette inn flex bokser for å få det utsende jeg ønsker  */
 .product-specific_flex {
@@ -187,6 +204,12 @@ textarea {
 
 .product-specific_details {
     padding: 0px 30px;
+}
+
+.product-specific__details a {
+    display: block;
+    width: 95.767px;
+    margin: auto;
 }
 
 .product-specific_price {
