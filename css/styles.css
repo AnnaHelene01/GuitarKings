@@ -7,6 +7,10 @@
 /*Sette font for resten av teksten på siden, samt ekstra fonter*/
 body {
     font-family: 'Roboto', Verdana, sans-serif;
+    min-height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 /*Velge ut hvilke elementer som skal ha Boots fonten:*/
@@ -97,6 +101,14 @@ header a {
     grid-column: 1;
     font-size: 1em;
     margin: 5px;
+}
+
+.product--sale {
+    display: flex;
+}
+
+.old-price {
+    text-decoration: line-through;
 }
 
 .cta-sale {
@@ -269,9 +281,15 @@ textarea {
 }
 
 /* GUITARS PAGE / sette 3 kolonne grid */
+.guitars {
+    max-width: 1000px;
+    margin: auto;
+}
+
 .product-list {
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    grid-gap: 20px;
 }
 
 .product-list img {
