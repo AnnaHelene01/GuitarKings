@@ -115,8 +115,9 @@ header a {
     background-color: #127300;
 }
 
-.footer {
+footer {
     text-align: center;
+    padding: 20px;
 }
 
 /* Links */
