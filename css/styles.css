@@ -34,10 +34,26 @@ header, footer {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 nav {
     margin-left: 25px;
+    display: none;
+    position: fixed;
+    top: 45px;
+    background: #202020;
+    z-index: 1000;
+    right: 0px;
+}
+
+/* Hamburger meny for mobil versjon*/
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
 }
 
 nav ul {
@@ -45,7 +61,8 @@ nav ul {
 }
 
 nav li {
-    display: inline-block;
+    display: block;
+    padding: 20px 30px;
 }
 
 /* Sette underline på aktiv side*/
@@ -64,7 +81,7 @@ header a {
     color: #FFF;
     font-size: 1em;
     text-transform: uppercase;
-    padding: 10px 80px;
+    padding: 10px 40px;
     border-radius: 5px;
     cursor: pointer;
 
@@ -135,7 +152,7 @@ a {
     background-image: url('../images/home-header.jpg');  
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: center;
     background-position-y: bottom;
     min-height: 70vh;
     position: relative;
@@ -145,8 +162,9 @@ a {
 .welcome__content {
     position: absolute;
     text-align: center;
-    top: 100px;
-    left: 100px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Posisjonere "our guitars" og bildet til to like store flex bokser */
@@ -155,6 +173,7 @@ a {
     max-width: 1000px;
     margin: 50px auto;
     display: flex;
+    flex-direction: column;
 }
 
 .selling-points {
@@ -185,7 +204,7 @@ a {
 }
 
 .reviews__content div{
-    margin: 50px;
+    margin: 20px;
 }
 
 .reviews__name {
@@ -194,7 +213,7 @@ a {
 
 .featured {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1fr);
     max-width: 1000px;
     margin: 50px auto;
     grid-gap: 10px;
@@ -295,4 +314,53 @@ textarea {
 
 .product-list img {
     width: 100%;
+}
+
+/* Gjøre nettsiden mobilvennlig*/
+@media (min-width: 600px) {
+.featured {
+    grid-template-columns: repeat(2, 1fr);
+ }
+ .selling-points, 
+ .reviews__content {
+     flex-direction: row;
+ }
+
+ header {
+     justify-content: start;
+ }
+
+ nav {
+     display: block;
+     position: static;
+ }
+
+ nav li {
+     display: inline-block;
+     padding: 0px;
+ }
+
+ header label {
+     display: none;
+ }
+}
+
+@media (min-width: 800px) {
+    .featured {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .reviews_content div {
+        margin: 50px;
+    }
+    .welcome {
+        background-position-x: right;
+    }
+    .welcome__content {
+        top: 100px;
+        left: 100px;
+        transform: none;
+    }
+    .cta {
+        padding: 10px 80px;
+    }
 }
