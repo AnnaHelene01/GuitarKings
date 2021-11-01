@@ -18,6 +18,7 @@ h1,
 h2,
 .logo {
     font-family: "BootsAndSpurs", "Segoe UI", Tahoma, Verdana;
+    text-align: center;
 }
 
 .logo {
@@ -81,10 +82,13 @@ header a {
     color: #FFF;
     font-size: 1em;
     text-transform: uppercase;
-    padding: 10px 40px;
     border-radius: 5px;
     cursor: pointer;
 
+}
+
+.cta-large {
+    padding: 10px 40px;
 }
 
 .cta-small {
@@ -165,6 +169,7 @@ a {
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
+    min-width: 210px;
 }
 
 /* Posisjonere "our guitars" og bildet til to like store flex bokser */
@@ -360,7 +365,7 @@ textarea {
         left: 100px;
         transform: none;
     }
-    .cta {
+    .cta-large {
         padding: 10px 80px;
     }
 }
