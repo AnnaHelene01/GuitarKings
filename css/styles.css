@@ -83,8 +83,27 @@ header a {
     font-size: 1em;
     text-transform: uppercase;
     border-radius: 5px;
-    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
 
+/* Lage transition på knappene:*/
+.cta:before {
+   content: "";
+   padding: 10px;
+   background: #FFF;
+   transform: rotate(45deg);
+   position: absolute;
+   height: 100px;
+   top: -40px;
+   left: -100px;
+   transition: left ease-in-out 1s;
+   opacity: 0.3;
+}
+
+.cta:hover:before {
+    left: 110%;
 }
 
 .cta-large {
@@ -190,6 +209,10 @@ a {
     flex: 1;
 }
 
+.selling-points h2 {
+    text-align: center;
+}
+
 /* Runde av bildene under review seksjonen */
 .review-bio, 
 .review-bio2 {
@@ -250,6 +273,7 @@ textarea {
 
 textarea {
     height: 60.4%;
+    min-height: 100px;
 }
 
 .contact {
@@ -261,6 +285,7 @@ textarea {
 .form-wrapper {
     display: flex;
     text-align: left;
+    flex-direction: column;
 }
 
 .form-wrapper > * {
@@ -273,7 +298,8 @@ textarea {
 .product-specific_flex {
     display: flex;
     max-width: 1000px;
-    margin: 50px auto;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .product-specific_flex > * {
@@ -311,9 +337,23 @@ textarea {
     margin: auto;
 }
 
+/* Lage animation på guitar siden:*/
+.guitars .products {
+    animation-name: show-guitars;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes show-guitars {
+    0%{opacity:0}
+    50%{opacity:0.5}
+    100%{opacity:1}
+}
+
 .product-list {
     display: grid;
-    grid-template-columns:repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 
@@ -322,6 +362,12 @@ textarea {
 }
 
 /* Gjøre nettsiden mobilvennlig*/
+@media (min-width: 400px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (min-width: 600px) {
 .featured {
     grid-template-columns: repeat(2, 1fr);
@@ -348,6 +394,22 @@ textarea {
  header label {
      display: none;
  }
+
+ .product-specific_flex {
+     flex-direction: column-reverse;
+ }
+
+ .product-specific_details {
+     margin-bottom: 50px;
+ }
+
+ .form-wrapper {
+     flex-direction: row;
+ }
+
+ .selling-points h2 {
+     text-align: left;
+ }
 }
 
 @media (min-width: 800px) {
@@ -367,5 +429,18 @@ textarea {
     }
     .cta-large {
         padding: 10px 80px;
+    }
+
+    .product-list {
+        grid-template-columns:repeat(3, minmax(0, 1fr));
+    }
+
+    .product-specific_flex {
+        flex-direction: row;
+        margin: 50px auto;
+    }
+
+    .product-specific_details {
+        margin-bottom: 0px;
     }
 }
