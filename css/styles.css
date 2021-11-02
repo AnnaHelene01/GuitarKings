@@ -172,11 +172,11 @@ a {
 
 /* Bildet på forsiden til Guitar Kings (bakgrunnsbilde */
 .frontpage {
-    background-image: url('../images/home-header.jpg');  
+    background-image: url('../images/home-header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: bottom;
+    background-position-y: bottom;           
     min-height: 70vh;
     position: relative;
 }
