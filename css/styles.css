@@ -362,6 +362,7 @@ textarea {
     width: 100%;
 }
 
+/* RESPONSIV NETTSIDE   */
 /* Gjøre nettsiden mobilvennlig*/
 @media (min-width: 400px) {
     .product-list {
