@@ -1,2 +1,2 @@
 # GuitarKings
-Lesson task 1 for HTML and CSS 
+Lesson task , building a website with HTML and CSS only!
